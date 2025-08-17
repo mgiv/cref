@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>https://linux.die.net/man/2/open
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open syscall flags</title>
+    <link rel="stylesheet" href="style.css">
+</head>https://linux.die.net/man/2/open
+<body>
+    <div class="man-page">
+        <h1>Flags for the <a href="https://linux.die.net/man/2/open">open</a> syscall</h1>
+      
+        <h2>Description</h2>
+        <p>The following table lists the file control flags used with the <b><a href="https://linux.die.net/man/2/open">open</a></b>(2) and <b>fcntl</b>(2) system calls, along with their octal and hexadecimal values. These flags are used to define the access mode and behavior of a file descriptor.</p>
+
+        <h2>List of flags</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Flag Name</th>
+                    <th>Octal Value</th>
+                    <th>Hexadecimal Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>O_ACCMODE</td><td>0o03</td><td>0x03</td></tr>
+                <tr><td>O_RDONLY</td><td>0o00</td><td>0x00</td></tr>
+                <tr><td>O_WRONLY</td><td>0o01</td><td>0x01</td></tr>
+                <tr><td>O_RDWR</td><td>0o02</td><td>0x02</td></tr>
+                <tr><td>O_CREAT</td><td>0o100</td><td>0x40</td></tr>
+                <tr><td>O_EXCL</td><td>0o200</td><td>0x80</td></tr>
+                <tr><td>O_NOCTTY</td><td>0o400</td><td>0x100</td></tr>
+                <tr><td>O_TRUNC</td><td>0o1000</td><td>0x200</td></tr>
+                <tr><td>O_APPEND</td><td>0o2000</td><td>0x400</td></tr>
+                <tr><td>O_NONBLOCK</td><td>0o4000</td><td>0x800</td></tr>
+                <tr><td>O_NDELAY</td><td>0o4000</td><td>0x800</td></tr>
+                <tr><td>O_ASYNC</td><td>0o20000</td><td>0x2000</td></tr>
+                <tr><td>__O_DIRECT</td><td>0o40000</td><td>0x4000</td></tr>
+                <tr><td>__O_LARGEFILE</td><td>0o100000</td><td>0x10000</td></tr>
+                <tr><td>__O_DIRECTORY</td><td>0o200000</td><td>0x20000</td></tr>
+                <tr><td>__O_NOFOLLOW</td><td>0o400000</td><td>0x40000</td></tr>
+                <tr><td>__O_NOATIME</td><td>0o1000000</td><td>0x100000</td></tr>
+                <tr><td>__O_CLOEXEC</td><td>0o2000000</td><td>0x200000</td></tr>
+                <tr><td>__O_PATH</td><td>0o10000000</td><td>0x1000000</td></tr>
+                <tr><td>__O_DSYNC</td><td>0o10000</td><td>0x1000</td></tr>
+                <tr><td>O_SYNC</td><td>0o4010000</td><td>0x401000</td></tr>
+                <tr><td>O_FSYNC</td><td>0o4010000</td><td>0x401000</td></tr>
+                <tr><td>__O_TMPFILE</td><td>0o20200000</td><td>0x2020000</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
