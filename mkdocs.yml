@@ -1,0 +1,8 @@
+site_name: cref
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - c
+    - x86asm
