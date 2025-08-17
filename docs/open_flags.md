@@ -1,4 +1,4 @@
-# [open](https://linux.die.net/man/2/open) syscall flags
+# Flags for syscall [open](https://linux.die.net/man/2/open)
 
 ## Description
 The following table lists the file control flags used with the **[open(2)](https://linux.die.net/man/2/open)** system call, along with their octal and hexadecimal values.
