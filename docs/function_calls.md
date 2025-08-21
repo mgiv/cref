@@ -40,6 +40,14 @@ mov rsp, rbp
 pop rbp
 ```
 
+## Alternative Prologue and Epilogue
+Enter and leave do the same as the standard function prologues. With enter, you can specify a number to increase `rsp` by, in this case it increases by 16. The second arg is for nesting stack frames. Ignore this for now.
+```asm
+enter 16, 0
+; code
+leave
+```
+
 
 ### Stack base and stack pointer
 `rsp` (stack pointer) points to the top of the stack. Because the stack grows downward in memory, a push operation decrements rsp, and a pop operation increments rsp. 
