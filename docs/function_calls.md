@@ -27,6 +27,19 @@ When calling a function the stack must be aligned to 16 bytes. This is for AVX a
 ## Prologue and Epilogue
 When a function is called, you need to set up the stack frame. This is done by pushing the stack base pointer `rbp` to the stack, then setting it to `rsp` (current stack pointer). \
 Before returning, `rsp` should be set back to what it was before the function, which happens to be `rbp`. `rbp` then needs to be set back to how the caller left it, so it is popped from the stack
+### Prologue
+This code should be at the start of most functions:
+```asm
+push rbp
+mov rbp, rsp
+```
+### Epilogue
+This code should be at the end of the function if the prologue is used
+```asm
+mov rsp, rbp
+pop rbp
+```
+
 
 ### Stack base and stack pointer
 `rsp` (stack pointer) points to the top of the stack. Because the stack grows downward in memory, a push operation decrements rsp, and a pop operation increments rsp. 
