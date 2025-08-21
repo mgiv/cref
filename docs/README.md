@@ -6,5 +6,6 @@
 - [Function calls](function_calls.md)
 ## External documentation
 - [Syscall manpages](https://linux.die.net/man/2/)
+- [Linux syscall table](https://filippo.io/linux-syscall-table/)
 - [C standard library](https://cppreference.com/w/c/header.html)
 
